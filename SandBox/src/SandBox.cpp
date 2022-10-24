@@ -1,4 +1,5 @@
 #include "Rapture.h"
+#include <stdio.h>
 
 class SandBox : public Rapture::Application
 {
@@ -13,6 +14,15 @@ public:
 
 	}
 
+	void Run() override
+	{
+	}
+
 };
 
+
+Rapture::Application* Rapture::CreateApplication()
+{
+	return new SandBox();
+}
 

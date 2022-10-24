@@ -9,3 +9,5 @@
 #else 
 	#error Rapture only runs on Windows. Linux, Mac, etc are shyte anyways...
 #endif
+
+#define BIT_FIELD(X) 1 << X
